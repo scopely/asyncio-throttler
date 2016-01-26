@@ -12,24 +12,12 @@ __pycache__/*
 .*.swp
 
 # Project files
-.ropeproject
-.project
-.pydevproject
-.settings
-.idea
+.vscode
 
 # Package files
 *.egg
 *.eggs/
-.installed.cfg
 *.egg-info
-
-# Unittest and coverage
-htmlcov/*
-.coverage
-.tox
-junit.xml
-coverage.xml
 
 # Build and docs folder/files
 build/*
@@ -39,3 +27,5 @@ docs/api/*
 docs/_build/*
 cover/*
 MANIFEST
+env/
+.env/

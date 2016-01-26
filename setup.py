@@ -1,23 +1,22 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+"""Flexible tools for throttling and managing async tasks such as
+web requests from asyncio.
+
 """
-    Setup file for asyncio_throttler.
+from setuptools import setup, find_packages
 
-    This file was generated with PyScaffold 2.5.3, a tool that easily
-    puts up a scaffold for your new Python project. Learn more under:
-    http://pyscaffold.readthedocs.org/
-"""
-
-import sys
-from setuptools import setup
-
-
-def setup_package():
-    needs_sphinx = {'build_sphinx', 'upload_docs'}.intersection(sys.argv)
-    sphinx = ['sphinx'] if needs_sphinx else []
-    setup(setup_requires=['six', 'pyscaffold>=2.5a0,<2.6a0'] + sphinx,
-          use_pyscaffold=True)
-
-
-if __name__ == "__main__":
-    setup_package()
+setup(
+    name='asyncio_throttler',
+    version='0.1.0',
+    description=__doc__,
+    author="Anthony Grimes",
+    author_email="i@raynes.me",
+    url='https://github.com/Raynes/asyncio_throttler',
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=[],
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Natural Language :: English',
+        'Programming Language :: Python :: 3.5'
+        ]
+    )
