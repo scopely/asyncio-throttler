@@ -93,7 +93,7 @@ if __name__ == '__main__':
     loop.close()
 ```
 
-## How's It Work
+## How's It Works
 
 A Throttler is instantiated with a list of awaitables, an async function, and
 numerous keyword arg knobs you adjust to suit your purposes.
